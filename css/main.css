@@ -258,6 +258,12 @@ section {
     text-align: center;
     display: grid;
     grid-template-columns: 50% 50%; }
+    .section .views .div-total .btn {
+      background-color: rgba(245, 245, 245, 0.644);
+      color: black;
+      border: 2px solid #84552b;
+      font-size: 30px;
+      padding: 5px 20px; }
     .section .views .div-total .div-pagar {
       display: grid;
       grid-template-columns: 30% 50%;
@@ -271,6 +277,12 @@ section {
         padding-bottom: 10px;
         font-weight: bolder;
         font-size: 30px; }
+  .section .views h2 {
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  .section .views .imagen-portada {
+    padding-top: 20px;
+    padding-bottom: 20px; }
 
 footer {
   background-image: url(../imagenes/footer.webp);

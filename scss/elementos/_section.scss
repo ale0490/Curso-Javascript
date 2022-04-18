@@ -41,5 +41,13 @@ section {
         @import "secciones/_somos.scss";
         @import "secciones/_contacto.scss";
         @import "secciones/carrito.scss";
+        h2 {
+            padding-top: $medida;
+            padding-bottom: $medida*2;
+        }
+        .imagen-portada {
+            padding-top: $medida*2;
+            padding-bottom: $medida*2;
+        }
     }
 };

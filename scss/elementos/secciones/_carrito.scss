@@ -46,6 +46,13 @@
     text-align: center;
     display: grid;
     grid-template-columns: 50% 50%;
+    .btn {
+        background-color: rgba(245, 245, 245, 0.644);
+        color: map-get($colores , texto);
+        border: 2px solid map-get($colores , secundario);
+        font-size: $medida*3;
+        padding: 5px 20px; 
+    }
     .div-pagar {
         display: grid;
         grid-template-columns: 30% 50%;
@@ -61,5 +68,4 @@
             font-size: $medida*3;
         }
     }
-    
 }

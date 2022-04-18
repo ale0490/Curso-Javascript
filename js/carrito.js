@@ -1,6 +1,5 @@
 let listaProductos = [];
 let carritoProductos = [];
-let pagar = 0;
 
 function cargarCarritoDeLocalStorage () {
     if (localStorage.getItem('carrito') !== null) {
@@ -10,7 +9,6 @@ function cargarCarritoDeLocalStorage () {
 
 function carrito() {
     actualizarCarrito();
-    pagar = 0;
 }
 
 async function crearListaProductos(){
@@ -91,19 +89,22 @@ async function actualizarCarrito(){
         eliminar.addEventListener('click', borrarItemCarrito);
         li.appendChild(eliminar);
     });
-    /*
-    pagar = carritoProductos.reduce((subtotal, item) => {
-        const miItem = listaProductos.filter((producto) => {
-            return producto.id == parseInt(item.id)
-        });
-       return subtotal + parseInt(miItem[0].precio)
-    },0);*/
-
-    pagar = calcularTotal();
-
+   
     const divTotal = document.createElement("div");
     divTotal.classList.add("div-total");
     itemsDom.appendChild(divTotal);
+
+    const divVacio2 = document.createElement("div");
+    divTotal.appendChild(divVacio2);
+
+    const divVaciar = document.createElement("div");
+    divTotal.appendChild(divVaciar);
+
+    const botonVaciar = document.createElement("button");
+    botonVaciar.classList.add("btn");
+    botonVaciar.textContent = "Vaciar Carrito";
+    botonVaciar.addEventListener('click', vaciarCarrito);
+    divVaciar.appendChild(botonVaciar);
 
     const divVacio = document.createElement("div");
     divTotal.appendChild(divVacio);
@@ -119,17 +120,18 @@ async function actualizarCarrito(){
 
     const totalPrecio = document.createElement("p");
     totalPrecio.classList.add ("texto-total");
-    totalPrecio.textContent = "$ " + pagar; //calcularTotal();
+    totalPrecio.textContent = "$ " + calcularTotal();
     divPagar.appendChild(totalPrecio);
 };
 
 function calcularTotal(){
-    
+
     return carritoProductos.reduce((subtotal, item) => {
-        const miItem = listaProductos.filter((producto) => {
+        const miItem = listaProductos.find((producto) => {
             return producto.id == parseInt(item.id)
         });
-       return subtotal + parseInt(miItem[0].precio)
+
+       return subtotal + parseInt(miItem.precio)
     }, 0);
 }
 
@@ -154,6 +156,7 @@ function borrarItemCarrito(e) {
         carritoCompras = carritoCompras.filter((carritoId) => {
         return carritoId !== id;
         });
+        carritoProductos = [];
         actualizarLocalStorage();
         }
         actualizarCarrito();
@@ -162,3 +165,29 @@ function borrarItemCarrito(e) {
 function actualizarLocalStorage () {
     localStorage.setItem('carrito', JSON.stringify(carritoCompras));
 }
+function vaciarCarrito(){
+
+    Swal.fire({
+        title: '¿Vaciar?',
+        text: "¿Esta seguro que desea vaciar el carrito?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'ELIMINAR'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+            'Eliminado',
+            'Ha vaciado el carrito',
+            'success'
+            )
+            listaProductos = [];
+            carritoProductos = [];
+            carritoCompras = [];
+            localStorage.clear();
+            actualizarLocalStorage();
+            actualizarCarrito();
+        }
+    })
+};

@@ -1,10 +1,10 @@
 //objeto y arrays
-const objeto1 = new Producto (01, "Pasteleria", 0, "imagenes/tortas/frutilla.webp", "http://127.0.0.1:5500/onepage/index.html#/pasteleria");
-const objeto2 = new Producto (02, "Alfajores", 0,"imagenes/alfajores/alfajor2.webp", "http://127.0.0.1:5500/onepage/index.html#/pasteleria");
-const objeto3 = new Producto (03, "Chocolates", 0,"imagenes/alfajores/tableta.webp", "http://127.0.0.1:5500/onepage/index.html#/pasteleria");
-const objeto4 = new Producto (04, "Tartas", 0,"imagenes/tortas/pastafrola-batata.webp", "http://127.0.0.1:5500/onepage/index.html#/pasteleria");
-const objeto5 = new Producto (05, "Muffin & cupcakes", 0,"imagenes/tortas/muffin.webp", "http://127.0.0.1:5500/onepage/index.html#/pasteleria");
-const objeto6 = new Producto (06, "Panificados", 0,"imagenes/panificados/medialunas.webp", "http://127.0.0.1:5500/onepage/index.html#/panificados");
+const objeto1 = new Producto (01, "Pasteleria", 0, "imagenes/tortas/frutilla.webp", "index.html#/pasteleria");
+const objeto2 = new Producto (02, "Alfajores", 0,"imagenes/alfajores/alfajor2.webp", "index.html#/pasteleria");
+const objeto3 = new Producto (03, "Chocolates", 0,"imagenes/alfajores/tableta.webp", "index.html#/pasteleria");
+const objeto4 = new Producto (04, "Tartas", 0,"imagenes/tortas/pastafrola-batata.webp", "index.html#/pasteleria");
+const objeto5 = new Producto (05, "Muffin & cupcakes", 0,"imagenes/tortas/muffin.webp", "index.html#/pasteleria");
+const objeto6 = new Producto (06, "Panificados", 0,"imagenes/panificados/medialunas.webp", "index.html#/panificados");
 const grupo1 = [objeto1, objeto2, objeto3];
 const grupo2 = [objeto4, objeto5, objeto6];
 const ImagenesIndexArray = [grupo1, grupo2];
