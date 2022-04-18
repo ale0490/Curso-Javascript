@@ -1,0 +1,10 @@
+.div-productos-home {
+    padding-top: $medida;
+    padding-bottom: $medida*2;
+    display: flex;
+    justify-content: space-around;
+    .imagen-producto {
+        width: $medida*30;
+        height: $medida*30;
+    }
+};

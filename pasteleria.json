@@ -1,0 +1,92 @@
+[{
+    "id":"1",
+    "nombre":"Torta Matilda",
+    "precio":"2500",
+    "imagen":"imagenes/tortas/torta-portada.webp"
+},
+{   "id":"2",
+    "nombre":"Torta Oreo",
+    "precio":"2000",
+    "imagen":"imagenes/tortas/torta-oreo.webp"
+},
+{   "id":"3",
+    "nombre":"Torta Flan",
+    "precio":"2250",
+    "imagen":"imagenes/tortas/torta.webp"
+},
+{   "id":"4",
+    "nombre":"Torta de Frutillas",
+    "precio":"2050",
+    "imagen":"imagenes/tortas/frutilla.webp"
+},
+{   "id":"5",
+    "nombre":"Marquise de Frutos Rojos",
+    "precio":"2300",
+    "imagen":"imagenes/tortas/marquise.webp"
+},
+{   "id":"6",
+    "nombre":"Torta Selva Negra",
+    "precio":"2400",
+    "imagen":"imagenes/tortas/tarta-selva-negra.webp"
+},
+{   "id":"7",
+    "nombre":"Alfajores de Maicena",
+    "precio":"1200",
+    "imagen":"imagenes/alfajores/alfajor.webp"
+},
+{   "id":"8",
+    "nombre":"Alfajores Clasicos",
+    "precio":"1200",
+    "imagen":"imagenes/alfajores/alfajor2.webp"
+},
+{   "id":"9",
+    "nombre":"Alfajores Santafecinos",
+    "precio":"1200",
+    "imagen":"imagenes/alfajores/ojaldre.webp"
+},
+{   "id":"10",
+    "nombre":"Macarons",
+    "precio":"1200",
+    "imagen":"imagenes/alfajores/macarons.webp"
+},
+{   "id":"11",
+    "nombre":"Conitos de Dulce de Leche",
+    "precio":"1200",
+    "imagen":"imagenes/alfajores/conitos.webp"
+},
+{   "id":"12",
+    "nombre":"Tabletas de chocolate",
+    "precio":"1200",
+    "imagen":"imagenes/alfajores/tableta.webp"
+},
+{   "id":"13",
+    "nombre":"Crumble de manzana",
+    "precio":"1200",
+    "imagen":"imagenes/tortas/torta-manzana.webp"
+},
+{   "id":"14",
+    "nombre":"Pastafrola",
+    "precio":"1200",
+    "imagen":"imagenes/tortas/pastafrola-batata.webp"
+},
+{   "id":"15",
+    "nombre":"Tarta Toffee",
+    "precio":"1200",
+    "imagen":"imagenes/tortas/torta-tofy.webp"
+},
+{   "id":"16",
+    "nombre":"Tarta de Ricota",
+    "precio":"1200",
+    "imagen":"imagenes/tortas/ricota.webp"
+},
+{   "id":"17",
+    "nombre":"Cupcakes",
+    "precio":"1200",
+    "imagen":"imagenes/tortas/cupcakes.webp"
+},
+{   "id":"18",
+    "nombre":"Muffins",
+    "precio":"1200",
+    "imagen":"imagenes/tortas/muffin.webp"
+}
+]

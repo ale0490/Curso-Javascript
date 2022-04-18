@@ -1,0 +1,32 @@
+.section-contact {
+    color: map-get($colores , texto );
+    font-size: 20px;
+    padding-bottom: $medida*3;
+    padding-left: $medida;
+    text-align: center;  
+    animation: rotacion .5s ease-in;
+    .contacto {
+        display: flex;
+        justify-content: center;
+        padding-bottom: $medida;
+        .datos {
+            padding-top: 0;
+            padding-left: $medida;
+        }
+    }
+    .row {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-right: $medida;
+        margin-right: 0;
+        .col-sm-2 {
+            width: 100%;
+        }
+        .col-sm-10 {
+            @include col-sm-10;
+        }
+        .enviar {
+            width: $medida*10;
+        }
+    }
+};

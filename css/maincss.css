@@ -1,0 +1,401 @@
+h1 {
+  font-size: 70px; }
+
+h2 {
+  font-size: 50px; }
+
+h3 {
+  font-size: 25px; }
+
+h4 {
+  font-size: 20px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif,'Helvetica Neue', sans-serif; }
+
+h, section h1, section h2, footer h4 {
+  color: #84552b;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  font-weight: bolder;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+@keyframes fade-izquierda {
+  from {
+    opacity: 0;
+    transform: translateX(500px); }
+  to {
+    opacity: 1; } }
+
+@keyframes fade-derecha {
+  from {
+    opacity: 0;
+    transform: translateX(-500px); }
+  to {
+    opacity: 1; } }
+
+@keyframes fade-arriba {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes rotacion {
+  0% {
+    transform: perspective(2500px) rotateY(-100deg); }
+  25% {
+    transform: perspective(2500px) rotateY(-75deg); }
+  50% {
+    transform: perspective(2500px) rotateY(-50deg); }
+  75% {
+    transform: perspective(2500px) rotateY(-25deg); }
+  100% {
+    transform: perspective(2500px) rotateY(0deg); } }
+
+header {
+  background-color: #30271e;
+  height: 91.2px; }
+  header ul {
+    padding: 0;
+    margin: 0; }
+    header ul a {
+      text-decoration: none;
+      color: #f7e4cb;
+      text-shadow: 1px 1px 1px black; }
+      header ul a:hover {
+        text-decoration: underline;
+        color: #f7e4cb; }
+    header ul button img {
+      width: 35px;
+      height: 35px; }
+
+.contenedor-nav {
+  background-color: #30271e;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  opacity: 0.9;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .contenedor-nav .navbar {
+    text-align: center; }
+    .contenedor-nav .navbar .container-fluid .navbar-toggler {
+      background-color: #f7e4cb; }
+    .contenedor-nav .navbar .container-fluid .navbar-collapse .navbar-brand {
+      font-size: 38px; }
+    .contenedor-nav .navbar .container-fluid .navbar-collapse .btn {
+      padding: 0;
+      background-color: #f7e4cb; }
+  .contenedor-nav .collapse .card {
+    background-color: #30271e;
+    color: #f7e4cb;
+    font-size: 25px; }
+    .contenedor-nav .collapse .card .lista-carrito {
+      text-align: center;
+      display: grid;
+      grid-template-columns: 350px 200px 100px 100px;
+      justify-content: space-between;
+      border: 1px solid #84552b; }
+      .contenedor-nav .collapse .card .lista-carrito .texto-carrito {
+        padding-top: 20px;
+        padding-bottom: 20px; }
+      .contenedor-nav .collapse .card .lista-carrito .imagen-carrito {
+        height: 80px;
+        width: 80px; }
+    .contenedor-nav .collapse .card .btn {
+      background-color: #84552b;
+      color: #f7e4cb;
+      border: 1.5px solid #84552b;
+      font-size: 20px;
+      margin: 20px; }
+
+section {
+  background-image: url(../imagenes/section.webp);
+  padding-bottom: 50px; }
+  section h1 {
+    animation: fade-arriba .7s ease-in-out;
+    margin: 0; }
+  section h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin: 0;
+    text-decoration: underline; }
+  section h3 {
+    padding-top: 10px; }
+  section a {
+    text-decoration: none; }
+  section p {
+    margin: 0;
+    padding-bottom: 1rem; }
+
+.section {
+  text-align: center; }
+  .section .logo {
+    height: 150px;
+    width: 150px; }
+  .section .div-productos {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around; }
+    .section .div-productos .contenedor {
+      width: 300px;
+      height: 300px;
+      position: relative; }
+      .section .div-productos .contenedor .imagen-producto {
+        width: 300px;
+        height: 300px; }
+      .section .div-productos .contenedor .imagen-descripcion {
+        color: white;
+        background-color: #30271e;
+        margin: auto;
+        text-align: center;
+        line-height: 100px;
+        transition: opacity .4s linear;
+        cursor: pointer;
+        position: absolute;
+        top: 200px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        font-size: 25px; }
+      .section .div-productos .contenedor:hover .imagen-descripcion {
+        opacity: 0.9;
+        width: 300px;
+        height: 100px;
+        bottom: 0; }
+    .section .div-productos .modal .modal-dialog .modal-content {
+      color: white;
+      background-color: #30271e; }
+      .section .div-productos .modal .modal-dialog .modal-content .modal-header .btn-close {
+        background-color: white; }
+      .section .div-productos .modal .modal-dialog .modal-content .modal-body {
+        font-size: 18px; }
+        .section .div-productos .modal .modal-dialog .modal-content .modal-body .imagen-modal {
+          width: 300px;
+          height: 300px;
+          margin-bottom: 1rem; }
+    .section .div-productos .boton .botones {
+      display: grid;
+      grid-template-columns: 100px 100px;
+      justify-content: space-around; }
+    .section .div-productos .boton .boton-agregar {
+      background-color: #84552b;
+      color: white;
+      font-weight: bolder; }
+  .section .section-p {
+    color: black;
+    margin-bottom: 0;
+    font-size: 18px;
+    padding-top: 30px; }
+  .section .quienes-somos {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 10px; }
+    .section .quienes-somos .imagen-somos {
+      width: 612px;
+      height: 408px;
+      padding-left: 100px;
+      animation: fade-derecha 2s ease-in;
+      padding-bottom: 30px; }
+    .section .quienes-somos .descripcion {
+      color: black;
+      text-align: left;
+      padding-right: 100px;
+      padding-left: 50px;
+      font-size: 20px;
+      animation: fade-izquierda 2s ease-in;
+      background-color: rgba(245, 245, 245, 0.644); }
+  .section .section-contact {
+    color: black;
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    text-align: center;
+    animation: rotacion .5s ease-in; }
+    .section .section-contact .row {
+      display: grid;
+      grid-template-columns: auto auto;
+      padding-right: 10px;
+      margin-right: 0; }
+      .section .section-contact .row .col-sm-2 {
+        width: 100%; }
+      .section .section-contact .row .col-sm-10 {
+        width: 100%;
+        padding-bottom: 5px;
+        margin-right: 150px;
+        font-size: 20px; }
+      .section .section-contact .row .enviar {
+        width: 100px; }
+
+footer {
+  background-image: url(../imagenes/footer.webp);
+  background-size: cover;
+  background-position: center;
+  background-color: #30271e; }
+  footer h4 {
+    padding-top: 10px;
+    margin: 0;
+    color: #f7e4cb; }
+  footer ul {
+    padding: 0;
+    margin: 0; }
+    footer ul .link {
+      text-decoration: none;
+      color: white;
+      font-size: 18px; }
+      footer ul .link:hover {
+        text-decoration: underline; }
+  footer .sitio {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top: 1px solid white;
+    background-color: #30271e;
+    text-align: center;
+    font-size: 13px; }
+    footer .sitio .copy {
+      margin-bottom: 0;
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+
+.footer {
+  padding-right: 10px;
+  padding-left: 10px;
+  display: grid;
+  justify-content: space-around;
+  grid-template-areas: "navegacion pago news";
+  grid-template-columns: min-content auto auto; }
+  .footer .redes {
+    padding-top: 20px; }
+    .footer .redes .imagen-redes {
+      width: 40px; }
+    .footer .redes .imagen-pagos {
+      width: 45px;
+      margin: 3px; }
+  .footer .navegacion {
+    grid-area: navegacion; }
+  .footer .pago {
+    grid-area: pago; }
+  .footer .news {
+    grid-area: news; }
+    .footer .news .box-newsletter {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      .footer .news .box-newsletter .newsletter {
+        font-size: 18px;
+        text-align: left; }
+        .footer .news .box-newsletter .newsletter .row {
+          padding-right: 10px; }
+          .footer .news .box-newsletter .newsletter .row .col-sm-2 {
+            width: 100%; }
+          .footer .news .box-newsletter .newsletter .row .col-sm-10 {
+            width: 100%;
+            padding-bottom: 5px;
+            margin-right: 150px;
+            font-size: 20px;
+            width: auto;
+            margin-right: 0;
+            display: grid;
+            grid-template-columns: auto min-content; }
+            .footer .news .box-newsletter .newsletter .row .col-sm-10 .input {
+              padding-right: 10px; }
+              .footer .news .box-newsletter .newsletter .row .col-sm-10 .input .form-control {
+                border-radius: 0;
+                padding: 3px 5px;
+                font-size: 18px; }
+            .footer .news .box-newsletter .newsletter .row .col-sm-10 .suscribirse {
+              background-color: #84552b;
+              color: white; }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  section h1 {
+    font-size: 50px; }
+  section h2 {
+    font-size: 40px; }
+  .section .logo {
+    height: 120px;
+    width: 120px; }
+  .section .div-productos {
+    padding-right: 20px;
+    padding-left: 20px; }
+    .section .div-productos .contenedor {
+      width: 200px;
+      height: 200px; }
+      .section .div-productos .contenedor .imagen-producto {
+        width: 200px;
+        height: 200px; }
+  .section .quienes-somos {
+    display: block; }
+    .section .quienes-somos .imagen-somos {
+      padding-left: 10px;
+      height: 400px; }
+    .section .quienes-somos .descripcion {
+      padding-top: 5px;
+      padding-right: 50px;
+      padding-bottom: 5px;
+      padding-left: 50px; }
+  footer h3 {
+    font-size: 20px; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .contenedor-nav .navbar .container-fluid .navbar-collapse .navbar-brand {
+    font-size: 30px; }
+  section h1 {
+    font-size: 35px; }
+  section h2 {
+    font-size: 30px; }
+  .section {
+    align-items: center; }
+    .section .logo {
+      height: 100px;
+      width: 100px; }
+    .section .div-productos {
+      padding-right: 0; }
+      .section .div-productos .contenedor {
+        width: 200px;
+        height: 200px; }
+        .section .div-productos .contenedor .imagen-producto {
+          width: 200px;
+          height: 200px;
+          padding-top: 10px;
+          padding-bottom: 10px; }
+    .section .quienes-somos {
+      display: block; }
+      .section .quienes-somos .descripcion {
+        padding-right: 50px; }
+      .section .quienes-somos .imagen-somos {
+        display: none; }
+    .section .section-contact {
+      font-size: 20px; }
+  .footer {
+    display: grid;
+    grid-template-areas: "navegacion pago" "news news";
+    grid-template-columns: min-content auto; }
+    .footer .news .box-newsletter .newsletter .row .col-sm-10 .suscribirse {
+      background-color: #30271e; }
+  footer h3 {
+    font-size: 20px; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
+  .footer {
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px; } }
+
+@media only screen and (max-device-width: 679px) {
+  .section .div-productos {
+    flex-direction: column;
+    padding-left: calc((100vw - 200px )/ 2);
+    padding-right: 0; } }
+
+@media only screen and (max-device-width: 375px) {
+  .section .div-productos .modal .modal-dialog .modal-content .modal-body .imagen-modal {
+    width: 200px;
+    height: 200px; } }

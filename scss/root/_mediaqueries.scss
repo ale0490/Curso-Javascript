@@ -1,0 +1,160 @@
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    section{
+        h1 {
+            font-size: 50px;
+        }
+        h2 {
+            font-size: 40px;
+        }
+    }
+    .section {
+        .logo {
+            height: 120px;
+            width: 120px;
+        }
+        .div-productos {
+            padding-right: $medida*2;
+            padding-left: $medida*2;
+            .contenedor {
+                width: $medida*20;
+                height: $medida*20;
+                .imagen-producto {
+                    width: $medida*20;
+                    height: $medida*20;
+                }
+            }
+        }
+        .quienes-somos {
+            display: block;
+            .imagen-somos {
+                padding-left: $medida;
+                height: $medida*40;
+            }
+            .descripcion {
+                padding-top: $medida*0.5;
+                padding-right: $medida*5;
+                padding-bottom: $medida*0.5;
+                padding-left: $medida*5;
+            }
+        }
+    }
+    footer {
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .contenedor-nav {
+        .navbar {
+            .container-fluid {
+                .navbar-collapse {
+                    .navbar-brand {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    section{
+        h1 {
+            font-size: 35px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .section {
+        align-items: center;
+        .logo {
+            height: 100px;
+            width: 100px;
+        }
+        .div-productos {
+            padding-right: 0;
+            .contenedor {
+                width: $medida*20;
+                height: $medida*20;
+                .imagen-producto {
+                    width: $medida*20;
+                    height: $medida*20;
+                    padding-top: $medida;
+                    padding-bottom: $medida;
+                }
+            }
+        }
+        .quienes-somos {
+            display: block;
+            .descripcion {
+                padding-right: $medida*5;
+            }
+            .imagen-somos {
+                display: none;
+            }
+        }
+        .section-contact {
+            font-size: 20px;
+        }
+    }
+    .footer {
+        display: grid;
+        grid-template-areas: "navegacion pago" "news news";
+        grid-template-columns: min-content auto;
+        .news {
+            .box-newsletter {
+                .newsletter {
+                    .row {
+                        .col-sm-10 {
+                            .suscribirse {
+                                background-color: map-get($colores , header );
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media only  screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    .footer {
+        display: block;
+        padding-right: $medida*2;
+        padding-left: $medida*2;
+    }
+}
+
+@media only  screen and (max-device-width: 679px) {
+    .section {
+        .div-productos {
+            flex-direction: column;
+            padding-left: calc((100vw - 200px )/ 2);
+            padding-right: 0;
+        }
+    }
+}
+
+@media only  screen and (max-device-width: 375px) {
+    .section {
+        .div-productos {
+            .modal{
+                .modal-dialog{
+                    .modal-content{
+                        .modal-body{
+                            .imagen-modal {
+                                width: $medida*20;
+                                height: $medida*20;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

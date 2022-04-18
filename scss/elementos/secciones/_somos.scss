@@ -1,0 +1,27 @@
+.quienes-somos {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: $medida;
+    .imagen-somos {
+        width: 704px;
+        height: 436px;
+        padding-left: $medida*5;
+        padding-right: $medida;
+        animation: fade-derecha 2s ease-in;
+        padding-bottom: $medida*3;
+    }
+    .descripcion {
+        color: map-get($colores , texto );
+        text-align: left;
+        padding-right: $medida*5;
+        padding-left: $medida;
+        font-size: $texto;
+        animation: fade-izquierda 2s ease-in;
+        .texto-descripcion {    
+            background-color: rgba(245, 245, 245, 0.644);
+            padding-bottom: $medida*2;
+            padding-left: $medida*2;
+            padding-right: $medida*2;
+        }
+    }
+};

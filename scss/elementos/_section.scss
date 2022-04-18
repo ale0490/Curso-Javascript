@@ -1,0 +1,45 @@
+section {
+    background-image: url(../imagenes/section.webp);
+    padding-bottom: $medida*5;
+    h1 {
+        @extend h;
+        margin: 0;
+    }
+    h2 {
+        @extend h;
+        padding-top: $medida*5;
+        padding-bottom: $medida*2;
+        margin: 0;
+        text-decoration: underline;
+    }
+    h3 {
+        @extend h;
+        text-shadow: none;
+        text-decoration: underline;
+        padding-top: 10px;
+        color: map-get($colores , texto );
+    }
+    a {
+        text-decoration: none;
+    }
+    p {
+        margin: 0;
+        padding-top: $medida*2;
+        font-size: $texto;
+    }
+};
+
+.section {
+    text-align: center;
+    .logo {
+        height: 150px;
+        width: 150px;
+    }
+    .views {
+        @import "secciones/_home.scss";
+        @import "secciones/_productos.scss";
+        @import "secciones/_somos.scss";
+        @import "secciones/_contacto.scss";
+        @import "secciones/carrito.scss";
+    }
+};

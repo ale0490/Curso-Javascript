@@ -1,0 +1,65 @@
+.lista-carrito {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 400px auto 150px 100px;
+    justify-content: space-around;
+    border: 2px solid map-get($colores , secundario);
+    margin: 10px;
+    background-color: rgba(245, 245, 245, 0.644);
+    .texto-carrito {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        h3{
+            text-decoration: none;
+            font-size: $medida*3;
+        }
+        .precio-carrito {
+            color: map-get($colores , texto );
+            padding-top: $medida;
+            padding-bottom: $medida;
+            font-weight: bolder;
+            font-size: $medida*3;
+        }
+    }
+    .imagen {
+        padding-top: $medida;
+        padding-bottom: $medida;
+        .imagen-carrito {
+            height: 170px;
+            width: 170px;
+            font-size: $texto;
+        }
+    }
+    .btn {
+        background-color: map-get($colores , secundario);
+        color: map-get($colores , principal);
+        border: 1.5px solid map-get($colores , secundario);
+        font-size: $texto;
+        padding: 0; 
+        margin-top: $medida*6;
+        margin-left: $medida*2;
+        margin-right: $medida*2;
+        margin-bottom: $medida*7;
+    }
+}
+.div-total {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .div-pagar {
+        display: grid;
+        grid-template-columns: 30% 50%;
+        justify-content: space-around;
+        border: 2px solid map-get($colores , secundario);
+        margin: 10px;
+        background-color: rgba(245, 245, 245, 0.644);
+        .texto-total {
+            color: map-get($colores , texto );
+            padding-top: $medida;
+            padding-bottom: $medida;
+            font-weight: bolder;
+            font-size: $medida*3;
+        }
+    }
+    
+}

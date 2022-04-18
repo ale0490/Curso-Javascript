@@ -1,0 +1,25 @@
+.div-productos {
+    padding-top: $medida;
+    padding-bottom: $medida*2;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: min-content min-content min-content;
+    .contenedor {
+        display: block;
+        .imagen-producto {
+            width: $medida*30;
+            height: $medida*30;
+        }
+        .precio-producto {
+            font-weight: bolder;
+            font-size: $medida*2.5;
+        }
+        .boton-agregar {
+            margin-top: $medida*2;
+            margin-bottom: $medida*2;
+            font-size: $texto;
+            background-color: map-get($colores , secundario );
+            color: map-get($colores , texto2 );
+        }
+    }
+};

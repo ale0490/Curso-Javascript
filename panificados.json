@@ -1,0 +1,32 @@
+[{
+    "id":"19",
+    "nombre":"Medialunas",
+    "precio":"500",
+    "imagen":"imagenes/panificados/medialunas.webp"
+},
+{   "id":"20",
+    "nombre":"Budines",
+    "precio":"1000",
+    "imagen":"imagenes/panificados/budin.webp"
+},
+{   "id":"21",
+    "nombre":"Cookies",
+    "precio":"500",
+    "imagen":"imagenes/panificados/cookies.webp"
+},
+{   "id":"22",
+    "nombre":"Pepas",
+    "precio":"600",
+    "imagen":"imagenes/panificados/pepas.webp"
+},
+{   "id":"23",
+    "nombre":"Palmeritas",
+    "precio":"600",
+    "imagen":"imagenes/panificados/palmeritas.webp"
+},
+{   "id":"24",
+    "nombre":"Masas secas",
+    "precio":"900",
+    "imagen":"imagenes/panificados/masitas.webp"
+}
+]
